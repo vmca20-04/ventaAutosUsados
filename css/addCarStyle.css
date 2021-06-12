@@ -1,0 +1,54 @@
+.control-label{
+    color:rgb(100, 96, 96);
+ }
+ .form-border {
+    border: 1px solid #bbb9b9;
+    border-radius: 0px 0px 0px 10px 15px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 30px;
+    max-width: 100%;
+    height: auto;
+ }
+  .form-border .col-1{
+      margin-right: 50px;
+  }
+  .frm-car-register {
+    height:auto;
+    margin:0px;
+    background: white;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 50px;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+ }
+  .frm-title{
+     background-image: url(/images/background-image-title.png);
+     background-repeat: repeat;
+     height: 50px;
+     text-shadow: 1px 1px #8b8b8b;
+     color: #eee;
+     font-weight: bold;
+     padding: 10px 12px;
+     font-family: Arial;
+     font-size: 1.4em;
+ }
+ .frm-title .fa-car{
+     padding-right: 10px;
+     font-size: 30px;
+ }
+ .frm-title.frm-title-car-register{
+     border-radius: 12px 12px 0px 0px;
+ }
+ .form-check-label{
+     color:rgb(100, 96, 96);
+ }
+ .form-check-inline{
+     margin-right: 50px;
+     margin-bottom: 5px;
+     width: 280px;
+ }
