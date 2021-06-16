@@ -11,17 +11,91 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<title>Venta de Autos Usados</title>
     <style>
-
-    .col .car-item-image{
-        background: red;
-        height: 500px;
-        width: 450px;
-        margin-left:35px;
-    }
 	.carousel-inner{
-		width: 480px;
+		width: 500px;
 	}
-
+    .form-border-details{
+		border: 1px solid #bbb9b9;
+        border-radius: 0px 0px 0px 10px 15px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        max-width: 100%;
+        height: auto;
+	}
+	.form-border-details label{
+		margin-bottom: -10px;
+	}
+    .car-name{
+		margin-right: 50px;
+	}
+	.form-check-label{
+        color:rgb(100, 96, 96);
+    }
+    .form-check-inline{
+        margin-right: 80px;
+        margin-bottom: 5px;
+        width: 290px;
+    }
+	#frm-car-detail-extras{
+		border: 1px solid #bbb9b9;
+		width: 100%;
+		padding-left: 35px;
+		padding-right: 10px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+	.car-header-detail .row{
+		margin-left: 0px;
+		margin-right: 0px;
+		border-left:1px solid #bbb9b9;
+		border:1px solid #bbb9b9;
+	}
+	.car-header-seller-info{
+		margin-top: 25px;
+		border: 1px solid #bbb9b9;
+		padding-bottom: 15px;
+	}
+    .car-header-seller-info .row{
+		padding-left: 11px;
+	}
+	.car-header-seller-info label{
+        margin-bottom: 0px;
+		color:rgb(100, 96, 96);
+	}
+    .car-header-seller-info .col-2{
+         font-weight: bold;
+	}
+	.title-seller{
+		background: #ffeb3b;
+		height: 30px;
+		margin-bottom: 10px;
+		color:rgb(100, 96, 96);
+		font-weight: bold;
+        font-family: Arial;
+        font-size: 1.4em;
+		text-align: center;
+		padding-left: -10px;
+	}
+	.car-header-seller-info #sendEmailSeller{
+		margin-top: 15px;
+	}
+	.form-check-inline {
+        margin-right: 20px;
+        margin-bottom: 5px;
+        width: 290px;
+    }
+    /*START:MODIFICACION DEL CONTROL TABS DE BOOTSTRAP*/
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: #3a3d40;
+     }
+	 .nav-pills .nav-link {
+        border-radius: 0.35rem 0.35rem 0 0;
+		border: 1px solid #bbb9b9;
+     }
+    /*END:/*MODIFICACION DEL CONTROL TABS DE BOOTSTRAP*/*/
     </style>
 </head>
 <body>
@@ -49,15 +123,21 @@
 			</div>
 		</nav>
         <div class="frm-car-register">
-			<form>
 				<div class="frm-title frm-title-car-register">
-					<div class="col-6">
+					<div class="col-12">
 					<i class="fa fa-car pull-right"></i>
-                    Hyunday Cresta 2017
+                    <label class="car-name">
+					Hyunday Cresta 2017  
+					</label>
+					<label class="car-price">
+					Precio:¢3,900,000
+				   </label>
 					</div>
 				</div>
-			<div class="form-border">
-            <div class="form-group row">
+
+		   <div class="car-header-detail">
+            <div class="row">
+	        <div class="Car-Image col">
 		    <div class="carousel slide" id="secondary-carousel" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#secondary-carousel" data-slid-to="0" class="active"></li>
@@ -66,13 +146,13 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="car-item-image" src="imgItem/ticocar-1.jpg"></img>	
+						<img src="imgItem/ticocar-1.jpg"></img>	
 					</div>
 					<div class="carousel-item">
-						<img class="car-item-image" src="imgItem/ticocar-02c4bc.jpg"></img>	
+						<img src="imgItem/ticocar-02c4bc.jpg"></img>	
 					</div>
 					<div class="carousel-item">
-						<img class="car-item-image" src="imgItem/ticocar-0e1f62.jpg"></img>	
+						<img src="imgItem/ticocar-0e1f62.jpg"></img>	
 					</div>
 				</div>
 				<a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev">
@@ -85,14 +165,379 @@
 				</a>
             </div>
 			</div>
-            </div>
-       </form>
+					<div class="col">
+					<div class="car-header-seller-info">
+					<div class="title-seller">
+                        <div class="col-12">
+                            INFORMACION DEL VENDEDOR
+						</div>
+				    </div>
+					<div class="row">
+						<div class="col-2">
+							<label class="control-label">Nombre:</label>
+						</div>
+						<div class="col-10">
+							<label class="control-label">MOTORES TRANSITORIOS</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label class="control-label">Teléfono:</label>
+						</div>
+						<div class="col-10">
+							<label class="control-label">8865-1879</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label class="control-label">Email:</label>
+						</div>
+						<div class="col-10">
+							<label class="control-label">VMCA20@Gmail.com</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label class="control-label">Whatsapp:</label>
+						</div>
+						<div class="col-10">
+							<label class="control-label">8865-1879</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2">
+							<label class="control-label">Dirección:</label>
+						</div>
+						<div class="col-10">
+							<label class="control-label">Zapote, contiguo a correos de Costa Rica</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<button type="submit" id="sendEmailSeller" name="sendEmailSeller" value="sendEmailSeller" class="btn btn-info form-control">
+								<i class="fas fa-envelope"></i>
+								 Enviar correo al vendedor
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+<!--START:DETALLES DEL VEHICULO-->
+<ul class="nav nav-pills">
+	<li class="nav-item">
+		<a href="#tab1" class="nav-link active" data-toggle="tab">Detalles del Vehiculo</a>
+	</li>
+	<li class="nav-item">
+		<a href="#tab2" class="nav-link" data-toggle="tab">Equipamiento Extra</a>
+	</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tab1" role="tabpanel">
+<div class="form-border-details">
+	<div class="row">
+	<div class="col">
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Marca:</label>
 		</div>
+		<div class="col-6">
+			<label class="control-label">Sedan</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Modelo:</label>
+		</div>
+		<div class="col-6">
+			<label class="control-label">Este es un nuevo model</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Estilo:</label>
+		</div>
+		<div class="col-6">
+			<label class="control-label">Minivan</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Año:</label>
+		</div>
+		<div class="col-6">
+			<label class="control-label">2009</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Transmisión:</label>
+		</div>
+		<div class="col-6">
+			<label class="control-label">Automatico</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Color exterior:</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">Azul claro</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Color interior:</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">Negro</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Puertas:</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">4</label>
+		</div>
+	</div>
+</div>
+   <div class="col">
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Combustible:</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">Gasolina</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Kilometraje:</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">5000 km</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Cilindraje:</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">1400 CC</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Estado:</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">Excelente</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Disponibilidad:</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">Disponible</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Provincia</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">Alajuela</label>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-3">
+			<label class="control-label">Localidad</label>
+		</div>
+		<div class="col-4">
+			<label class="control-label">Alajuela Centro</label>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tab2" role="tabpanel">
+ <div  id="frm-car-detail-extras">
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+  <label class="form-check-label" for="inlineCheckbox1">Dirección Hidráulica</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Turbo</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Sensores Frontales</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Cierre Central</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Tapicería de Cuero</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Control de Radio en el Volante</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Asientos Eléctricos</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Halógenos</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Volante Multifuncional</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Vidrios Tintados</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Cassette</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Aire Acondicionado Climatizado</label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1"> Bolsa(s) de Aire</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Disco Compacto (DVD)</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Asiento(s) con Memoria</label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Vidrios Eléctricos</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Cruise Control</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Retrovisores Auto-Retractibles</label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Espejos Eléctricos</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Radio con USB/AUX</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Luces de Xenón/Bixenón</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Alarma</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">RTV al día</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Sensor de Lluvia</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Frenos ABS</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Control Electrónico de Estabilidad</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Llave Inteligente/Botón de Arranque</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Aire Acondicionado</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Control de Descenso</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Monitor de Presión de Llantas</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1"> Desempañador Trasero</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Caja de Cambios Dual</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Computadora de Viaje</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Sunroof/techo panorámico</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Cámara de Retroceso</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Volante Ajustable</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
+<label class="form-check-label" for="inlineCheckbox1">Aros de Lujo</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+<label class="form-check-label" for="inlineCheckbox2">Sensores de Retroceso</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+<label class="form-check-label" for="inlineCheckbox3">Bluetooth</label>
+</div>
+</div>
+</div>
+</div>
+<!--END:DETALLES DEL VEHICULO-->
+		    </div>
+			
+  </div>
 		<footer class="row">
 			<div class="col">
 				<label>Venta de Autos Usados 2021</label>
 			</div>
 		</footer>
+        </div>
+		</div>
 	</div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
