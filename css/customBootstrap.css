@@ -1,0 +1,59 @@
+    /*MODIFICACION DE CONTROLES BOOTSTRAP*/
+
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: #3a3d40;
+     }
+	 .nav-pills .nav-link {
+        border-radius: 0.35rem 0.35rem 0 0;
+		border: 1px solid #bbb9b9;
+     }
+	 .nav-link {
+		color:rgb(100, 96, 96);
+	 }
+	 .nav {
+		 margin-left:40px;
+	 }
+	 .tab-content{
+		 margin-right: 15px;
+         margin-left: 15px;
+		 margin-bottom: 10px;
+	 }
+	 .modal-header{
+		background-image:url(/images/background-image-title.png);
+	}
+     .modal-body {
+        padding-top: 1.5rem;
+		padding-right: 3rem;
+		padding-left: 3rem;
+		padding-bottom: 0.5rem;
+	}
+	.modal-body .control-label {
+		color: rgb(100, 96, 96);
+	}
+	.modal-header .fa-envelope{
+	    padding-top: 1px;
+        padding-right: 14px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+	.close {
+	    color:white;
+	}
+	.close:hover{
+		color:white;
+	}
+	.btn-send-email {
+		color: #fff;
+		background-color: #da3c0a;
+		border-color: #da3c0a;
+	}
+	.page-item.active .page-link {
+		z-index: 1;
+		color: #fff;
+		background-color: black;
+		border-color:black;
+	}
+	.page-link{
+		color:black;
+	}

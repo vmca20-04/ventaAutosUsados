@@ -1,361 +1,721 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
-	<link rel="stylesheet" href="css/mainStyle.css">
-	<link rel="stylesheet" href="css/addCarStyle.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<title>Venta de Autos Usados</title>
-</head>
-<body>
-	<div class="container mainForm">
-		<nav class="navbar navbar-expand-md fixed-top bg-yellow">
-			<a href="index.html" class="navbar-brand">PRINCIPAL</a>
-			<div class="navbar-collapse collapse">
-				<ul class="navbar-nav flex-grow-1">
-					<li class="nav-item">
-						<a class="nav-link">
-							INVENTARIO
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link">
-							CONTACTENOS
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="addCar.html" class="nav-link">
-							REGISTRAR VEHICULO
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-        <div class="frm-car-register">
-			<form>
-				<div class="frm-title frm-title-car-register">
-					<div class="col-6">
-					<i class="fa fa-car pull-right"></i>
-					REGISTRO DE VEHICULO
-					</div>
-				</div>
-			<div class="form-border">
-			    <div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Marca:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Modelo:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Estilo:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Precio:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Año:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Transmisión:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Color exterior:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Color interior:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Puertas:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Combustible:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Kilometraje:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Cilindraje:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Estado:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Disponibilidad:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Provincia:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-2">
-						<label class="control-label">Localidad:</label>
-					</div>
-					<div class="col-3">
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-			</div>
-		</form>
-		<form id="frm-extras">
-			<div class="frm-title">
-				<div class="col-6">
-				<i class="fa fa-wrench pull-right"></i>
-				EQUIPAMIENTO EXTRA DEL VEHICULO
-				</div>
-			</div>
-		<div class="form-border">
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Dirección Hidráulica</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Turbo</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Sensores Frontales</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Cierre Central</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Tapicería de Cuero</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Control de Radio en el Volante</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Asientos Eléctricos</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Halógenos</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Volante Multifuncional</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Vidrios Tintados</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Cassette</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Aire Acondicionado Climatizado</label>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link rel="stylesheet" href="css/mainStyle.css" />
+    <link rel="stylesheet" href="css/addCarStyle.css" />
+    <link rel="stylesheet" href="css/customBootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>Venta de Autos Usados</title>
+  </head>
+  <body>
+    <div class="container mainForm">
+      <nav class="navbar navbar-expand-md fixed-top bg-yellow">
+        <a href="index.html" class="navbar-brand">PRINCIPAL</a>
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#fm-modal"
+                class="nav-link"
+              >
+                CONTACTENOS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="addCar.html" class="nav-link"> REGISTRAR VEHICULO </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="frm-car-register">
+        <form>
+          <div class="frm-title frm-title-car-register">
+            <div class="col-6">
+              <i class="fa fa-car pull-right"></i>
+              CREAR ANUNCIO GRATIS
+            </div>
+          </div>
+          <div class="form-border">
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Marca:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Modelo:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Estilo:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Precio:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Año:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Transmisión:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Color exterior:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Color interior:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Puertas:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Combustible:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Kilometraje:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Cilindraje:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Estado:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Disponibilidad:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Provincia:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2">
+                <label class="control-label">Localidad:</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </form>
+        <form id="frm-extras">
+          <div class="frm-title">
+            <div class="col-6">
+              <i class="fa fa-wrench pull-right"></i>
+              EQUIPAMIENTO EXTRA DEL VEHICULO
+            </div>
+          </div>
+          <div class="form-border">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Dirección Hidráulica</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Turbo</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Sensores Frontales</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Cierre Central</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Tapicería de Cuero</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Control de Radio en el Volante</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Asientos Eléctricos</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Halógenos</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Volante Multifuncional</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Vidrios Tintados</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Cassette</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Aire Acondicionado Climatizado</label
+              >
+            </div>
 
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1"> Bolsa(s) de Aire</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Disco Compacto (DVD)</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Asiento(s) con Memoria</label>
-		</div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1">
+                Bolsa(s) de Aire</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Disco Compacto (DVD)</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Asiento(s) con Memoria</label
+              >
+            </div>
 
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Vidrios Eléctricos</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Cruise Control</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Retrovisores Auto-Retractibles</label>
-		</div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Vidrios Eléctricos</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Cruise Control</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Retrovisores Auto-Retractibles</label
+              >
+            </div>
 
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Espejos Eléctricos</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Radio con USB/AUX</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Luces de Xenón/Bixenón</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Alarma</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">RTV al día</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Sensor de Lluvia</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Frenos ABS</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Control Electrónico de Estabilidad</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Llave Inteligente/Botón de Arranque</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Aire Acondicionado</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Control de Descenso</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Monitor de Presión de Llantas</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1"> Desempañador Trasero</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Caja de Cambios Dual</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Computadora de Viaje</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Sunroof/techo panorámico</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Cámara de Retroceso</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Volante Ajustable</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">	
-			<label class="form-check-label" for="inlineCheckbox1">Aros de Lujo</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-			<label class="form-check-label" for="inlineCheckbox2">Sensores de Retroceso</label>
-		</div>
-		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-			<label class="form-check-label" for="inlineCheckbox3">Bluetooth</label>
-		</div>
-		</div>
-	</form>
-		</div>
-		<footer class="row">
-			<div class="col">
-				<label>Venta de Autos Usados 2021</label>
-			</div>
-		</footer>
-	</div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Espejos Eléctricos</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Radio con USB/AUX</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Luces de Xenón/Bixenón</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Alarma</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >RTV al día</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Sensor de Lluvia</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Frenos ABS</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Control Electrónico de Estabilidad</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Llave Inteligente/Botón de Arranque</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Aire Acondicionado</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Control de Descenso</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Monitor de Presión de Llantas</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1">
+                Desempañador Trasero</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Caja de Cambios Dual</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Computadora de Viaje</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Sunroof/techo panorámico</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Cámara de Retroceso</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Volante Ajustable</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Aros de Lujo</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Sensores de Retroceso</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Bluetooth</label
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer class="row">
+        <div class="col">
+          <label>Venta de Autos Usados 2021</label>
+        </div>
+      </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="js/tools.js"></script>
-</body>
-<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-	<i class="fas fa-chevron-up"></i>
-</a>
+    <script src="js/tools.js"></script>
+  </body>
+  <a
+    id="back-to-top"
+    href="#"
+    class="btn btn-light btn-lg back-to-top"
+    role="button"
+  >
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <div
+    class="modal fade"
+    id="fm-modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="fm-modal"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fas fa-envelope pull-right"> </i>
+          <h5 class="modal-title" id="">Contactenos</h5>
+          <button class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <div class="col-5">
+              <label class="control-label">Nombre completo:</label>
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-5">
+              <label class="control-label">Celular o teléfono:</label>
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-5">
+              <label class="control-label">Correo electronico:</label>
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-5">
+              <label class="control-label">Mensaje:</label>
+            </div>
+            <div class="col-12">
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="8"
+                cols="65"
+                class="form-control"
+              >
+              </textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <button
+              id="sendEmailSellerModal"
+              name="sendEmailSellerModal"
+              class="btn btn-send-email form-control"
+              data-toggle="modal"
+              data-target="#fm-modal"
+            >
+              Enviar correo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>

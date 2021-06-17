@@ -8,95 +8,10 @@
 	<link rel="stylesheet" href="/resources/demos/style.css">
 	<link rel="stylesheet" href="css/mainStyle.css">
     <link rel="stylesheet" href="css/addCarStyle.css">
+	<link rel="stylesheet" href="css/customBootstrap.css">
+	<link rel="stylesheet" href="css/detailCarStyle.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<title>Venta de Autos Usados</title>
-    <style>
-	.carousel-inner{
-		width: 500px;
-	}
-    .form-border-details{
-		border: 1px solid #bbb9b9;
-        border-radius: 0px 0px 0px 10px 15px;
-        padding-top: 30px;
-        padding-bottom: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
-        max-width: 100%;
-        height: auto;
-	}
-	.form-border-details label{
-		margin-bottom: -10px;
-	}
-    .car-name{
-		margin-right: 50px;
-	}
-	.form-check-label{
-        color:rgb(100, 96, 96);
-    }
-    .form-check-inline{
-        margin-right: 80px;
-        margin-bottom: 5px;
-        width: 290px;
-    }
-	#frm-car-detail-extras{
-		border: 1px solid #bbb9b9;
-		width: 100%;
-		padding-left: 35px;
-		padding-right: 10px;
-		padding-top: 40px;
-		padding-bottom: 30px;
-	}
-	.car-header-detail .row{
-		margin-left: 0px;
-		margin-right: 0px;
-		border-left:1px solid #bbb9b9;
-		border:1px solid #bbb9b9;
-	}
-	.car-header-seller-info{
-		margin-top: 25px;
-		border: 1px solid #bbb9b9;
-		padding-bottom: 15px;
-	}
-    .car-header-seller-info .row{
-		padding-left: 11px;
-	}
-	.car-header-seller-info label{
-        margin-bottom: 0px;
-		color:rgb(100, 96, 96);
-	}
-    .car-header-seller-info .col-2{
-         font-weight: bold;
-	}
-	.title-seller{
-		background: #ffeb3b;
-		height: 30px;
-		margin-bottom: 10px;
-		color:rgb(100, 96, 96);
-		font-weight: bold;
-        font-family: Arial;
-        font-size: 1.4em;
-		text-align: center;
-		padding-left: -10px;
-	}
-	.car-header-seller-info #sendEmailSeller{
-		margin-top: 15px;
-	}
-	.form-check-inline {
-        margin-right: 20px;
-        margin-bottom: 5px;
-        width: 290px;
-    }
-    /*START:MODIFICACION DEL CONTROL TABS DE BOOTSTRAP*/
-    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-        color: #fff;
-        background-color: #3a3d40;
-     }
-	 .nav-pills .nav-link {
-        border-radius: 0.35rem 0.35rem 0 0;
-		border: 1px solid #bbb9b9;
-     }
-    /*END:/*MODIFICACION DEL CONTROL TABS DE BOOTSTRAP*/*/
-    </style>
 </head>
 <body>
 	<div class="container mainForm">
@@ -105,18 +20,13 @@
 			<div class="navbar-collapse collapse">
 				<ul class="navbar-nav flex-grow-1">
 					<li class="nav-item">
-						<a class="nav-link">
-							INVENTARIO
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link">
+						<a href="#" data-toggle="modal" data-target="#fm-modal-contact" class="nav-link">
 							CONTACTENOS
 						</a>
 					</li>
 					<li class="nav-item">
 						<a href="addCar.html" class="nav-link">
-							REGISTRAR VEHICULO
+							CREAR ANUNCIO GRATIS
 						</a>
 					</li>
 				</ul>
@@ -134,7 +44,6 @@
 				   </label>
 					</div>
 				</div>
-
 		   <div class="car-header-detail">
             <div class="row">
 	        <div class="Car-Image col">
@@ -213,10 +122,10 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-6">
-							<button type="submit" id="sendEmailSeller" name="sendEmailSeller" value="sendEmailSeller" class="btn btn-info form-control">
+						<div class="col-6">	
+							<button id="sendEmailSeller" name="sendEmailSeller" class="btn btn-send-email form-control" data-toggle="modal" data-target="#fm-modal">
 								<i class="fas fa-envelope"></i>
-								 Enviar correo al vendedor
+								Enviar correo al vendedor
 							</button>
 						</div>
 					</div>
@@ -281,7 +190,7 @@
 		<div class="col-3">
 			<label class="control-label">Color exterior:</label>
 		</div>
-		<div class="col-4">
+		<div class="col-6">
 			<label class="control-label">Azul claro</label>
 		</div>
 	</div>
@@ -528,8 +437,7 @@
 </div>
 </div>
 <!--END:DETALLES DEL VEHICULO-->
-		    </div>
-			
+</div>
   </div>
 		<footer class="row">
 			<div class="col">
@@ -547,4 +455,110 @@
 <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
 	<i class="fas fa-chevron-up"></i>
 </a>
+<div class="modal fade" id="fm-modal-contact" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<i class="fas fa-envelope pull-right"> </i>
+				<h5 class="modal-title" id="">Contactenos</h5>
+				<button class="close" data-dismiss="modal" aria-label="Cerrar">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Nombre completo:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Celular o teléfono:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Correo electronico:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Mensaje:</label>
+					</div>
+					<div class="col-12">
+						<textarea id="mensaje" name="mensaje" rows="8" cols="65" class="form-control">	
+						</textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+					<button id="sendEmailSellerModal" name="sendEmailSellerModal" class="btn btn-send-email form-control" data-toggle="modal" data-target="#fm-modal">
+						Enviar correo
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<i class="fas fa-envelope pull-right"> </i>
+				<h5 class="modal-title" id="">Enviar correo al vendedor</h5>
+				<button class="close" data-dismiss="modal" aria-label="Cerrar">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Nombre completo:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Celular o teléfono:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Correo electronico:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Mensaje:</label>
+					</div>
+					<div class="col-12">
+						<textarea id="mensaje" name="mensaje" rows="8" cols="65" class="form-control">	
+						</textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+					<button id="sendEmailSellerModal" name="sendEmailSellerModal" class="btn btn-send-email form-control" data-toggle="modal" data-target="#fm-modal">
+						Enviar correo
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </html>

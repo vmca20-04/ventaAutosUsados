@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="/resources/demos/style.css">
 	<link rel="stylesheet" href="css/mainStyle.css">
+	<link rel="stylesheet" href="css/customBootstrap.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<title>Venta de Autos Usados MODIFICADO</title>
+	<title>Venta de Autos Usados</title>
 </head>
 <body>
 	<div class="container mainForm">
@@ -17,18 +18,13 @@
 			<div class="navbar-collapse collapse">
 				<ul class="navbar-nav flex-grow-1">
 					<li class="nav-item">
-						<a class="nav-link">
-							INVENTARIO
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link">
+						<a href="#" data-toggle="modal" data-target="#fm-modal" class="nav-link">
 							CONTACTENOS
 						</a>
 					</li>
 					<li class="nav-item">
 						<a href="addCar.html" class="nav-link">
-							REGISTRAR VEHICULO
+							CREAR ANUNCIO GRATIS
 						</a>
 					</li>
 				</ul>
@@ -74,6 +70,11 @@
 									<div class="col-3">
 										<select class="form-control">
 											<option>Todas las Marcas</option>
+											<option>Chevrolet</option>
+											<option>Daihatsu</option>
+											<option>Jeep</option>
+											<option>Mitsubishi</option>
+											<option>Nissa</option>
 										  </select>
 									</div>
 									<div class="col-8">
@@ -142,8 +143,34 @@
 						</div>
 					</div>
 				</div>
+                <div class="pagination-results row justify-content-start">
+                    <div class="col-4">
+						11 resultados (página 1 de 4)
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-4">
+						<nav>
+							<ul class="pagination">
+								<li class="page-item disabled">
+									<span class="page-link" aria-hidden="true">&laquo; Anterior</span>
+								</li>
+								<li class="page-item active"><a href="#" class="page-link">1</a></li>
+								<li class="page-item"><a href="#" class="page-link">2</a></li>
+								<li class="page-item"><a href="#" class="page-link">3</a></li>
+								<li class="page-item"><a href="#" class="page-link">4</a></li>
+								<li class="page-item">
+									<a href="#" class="page-link">
+										<span aria-hidden="true">Siguiente &raquo; </span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					</div>
 			</main>
 		</section>
+
 			<section class="row widgets">
 			<div class="col-12 cart-item col-md-3">
 				<a class="car-item-link" href="detailCar.html">
@@ -154,6 +181,7 @@
 				</div>
 				<div class="row">
 					<div class="col">
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
 						<img class="car-item-image" src="imgItem/ticocar-1.jpg"></img>	
 					</div>
 					</div>
@@ -194,6 +222,7 @@
 				</div>
 				<div class="row">
 					<div class="col">
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
 						<img class="car-item-image" src="images/Toyota_Corolla.jpg"></img>
 					</div>
 					</div>
@@ -233,6 +262,7 @@
 				</div>
 				<div class="row">
 					<div class="col">
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;1</p>
 						<img class="car-item-image" src="images/Toyota_Corolla.jpg"></img>
 					</div>
 					</div>
@@ -277,6 +307,7 @@
 				</div>
 				<div class="row">
 					<div class="col">
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;4</p>
 						<img class="car-item-image" src="images/Toyota_Corolla.jpg"></img>
 					</div>
 					</div>
@@ -596,6 +627,59 @@
 <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
 	<i class="fas fa-chevron-up"></i>
 </a>
+<div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<i class="fas fa-envelope pull-right"> </i>
+				<h5 class="modal-title" id="">Contactenos</h5>
+				<button class="close" data-dismiss="modal" aria-label="Cerrar">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Nombre completo:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Celular o teléfono:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Correo electronico:</label>
+					</div>
+					<div class="col-7">
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-5">
+						<label class="control-label">Mensaje:</label>
+					</div>
+					<div class="col-12">
+						<textarea id="mensaje" name="mensaje" rows="8" cols="65" class="form-control">	
+						</textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+					<button id="sendEmailSellerModal" name="sendEmailSellerModal" class="btn btn-send-email form-control" data-toggle="modal" data-target="#fm-modal">
+						Enviar correo
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </html>
 <script>
 	$( function() {
