@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link rel="stylesheet" href="css/mainStyle.css" />
+    <link rel="stylesheet" href="css/addCarStyle.css" />
+    <link rel="stylesheet" href="css/customBootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Venta de Autos Usados</title>
+    <style>
+      .table-car-detail{
+         border: 1px solid #bbb9b9;
+      }
+      .table-car-detail td, th {
+          vertical-align: middle;
+          color:black;
+          text-align: center;
+       }
+      .frm-title .fa-file-text-o{
+          padding-right: 10px;
+          font-size: 30px;
+      }
+      .form-border-favorite-list {
+          border: 1px solid #bbb9b9;
+          border-radius: 0px 0px 0px 10px 15px;
+          padding-top: 50px;
+          padding-bottom: 10px;
+          padding-right: 10px;
+          padding-left: 10px;
+          max-width: 100%;
+          height: auto;
+      }
+      .table .thead-dark th {
+          background-color: #3a3d40;
+      }
+      #fm-modal-confirm-remove{
+         top: 120px;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container mainForm">
+      <nav class="navbar navbar-expand-md fixed-top bg-yellow">
+        <a href="index.html" class="navbar-brand">PRINCIPAL</a>
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a
+                href="#"
+                data-toggle="modal"
+                data-target="#fm-modal-contact"
+                class="nav-link"
+              >
+                CONTACTENOS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="addCar.html" class="nav-link">CREAR ANUNCIO GRATIS</a>
+            </li>
+            <li class="nav-item">
+              <a href="myAdvCarList.html" class="nav-link">
+                MIS ANUNCIOS PUBLICADOS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="myFavCarList.html" class="nav-link"> MIS FAVORITOS </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              REGISTRO
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> LOGIN </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="frm-car-register">
+        <form>
+          <div class="frm-title frm-title-car-register">
+            <div class="col-6">
+              <i class="fa fa-file-text-o"></i>
+              MIS ANUNCIOS PUBLICADOS
+            </div>
+          </div>
+          <div class="form-border-favorite-list">
+          <table class="table table-car-detail">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Año</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Estado del anuncio</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="w-25">
+                  <a class="car-item-link" href="detailCar.html">
+                  <img class="img-fluid img-thumbnail"  src="imgItem/ticocar-1.jpg"></img>
+                </a>	
+                </td>
+                <td>Hyunday</td>
+                <td>Cresta</td>
+                <td>2017</td>
+                <td>$500,000</td>
+                <td>
+                  Activo
+                </td>
+                <td>
+                  <a href="detailCar.html" class="btn btn-secondary btn-sm">Detalles</a>
+                </td>
+                <td>
+                  <a href="#"  data-toggle="modal" data-target="#fm-modal-confirm-remove" class="btn btn-danger btn-sm">Remover</a>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="w-25">
+                  <a class="car-item-link" href="detailCar.html">
+                  <img class="img-fluid img-thumbnail"  src="images/Toyota_Corolla.jpg"></img>
+                </a>	
+                </td>
+                <td>Hyunday</td>
+                <td>Cresta</td>
+                <td>2017</td>
+                <td>$500,000</td>
+                <td>
+                  Activo
+                </td>
+                <td>
+                  <a href="detailCar.html" class="btn btn-secondary btn-sm">Detalles</a>
+                </td>
+                <td>
+                  <a href="#"  data-toggle="modal" data-target="#fm-modal-confirm-remove" class="btn btn-danger btn-sm">Remover</a>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </form>
+      </div>
+      <footer class="row">
+        <div class="col">
+          <label>Venta de Autos Usados 2021</label>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="https://use.fontawesome.com/b04cdf0891.js"></script>
+  </body>
+  <a
+    id="back-to-top"
+    href="#"
+    class="btn btn-light btn-lg back-to-top"
+    role="button"
+  >
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!--START:MODAL PARA REMOVER EL ANUNCIO DE FAVORITOS-->
+<div
+  class="modal fade"
+  id="fm-modal-confirm-remove"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="fm-modal-confirm-remove"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="">Confirmación</h5>
+        <button class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group row">
+          <div class="col-12">
+            <label class="control-label">
+              Desea retirar este anuncio de sus anuncios favoritos?
+            </label>
+          </div>
+        </div>
+        </div>
+        <div class="form-group row justify-content-center">
+        <div class="col-3">
+          <button
+            id="removeAdvert"
+            name="removeAdvert"
+            class="btn btn-danger form-control">
+            Aceptar
+          </button>
+      </div>
+      <div class="col-3">
+        <button
+          id="removeAdvert"
+          name="removeAdvert"
+          class="btn btn-dark form-control"
+          data-dismiss="modal">
+          Cancelar
+        </button>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+    <!--END:MODAL PARA REMOVER EL ANUNCIO DE FAVORITOS-->
+
+  <!--START:MODAL PARA CONTACTO-->
+  <div
+    class="modal fade"
+    id="fm-modal-contact"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="fm-modal-contact"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fas fa-envelope pull-right"> </i>
+          <h5 class="modal-title" id="">Contactenos</h5>
+          <button class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <div class="col-5">
+              <label class="control-label">Nombre completo:</label>
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-5">
+              <label class="control-label">Celular o teléfono:</label>
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-5">
+              <label class="control-label">Correo electronico:</label>
+            </div>
+            <div class="col-7">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-5">
+              <label class="control-label">Mensaje:</label>
+            </div>
+            <div class="col-12">
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="8"
+                cols="65"
+                class="form-control"
+              >
+              </textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <button
+              id="sendEmailSellerModal"
+              name="sendEmailSellerModal"
+              class="btn btn-send-email form-control">
+              Enviar correo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     <!--END:MODAL PARA CONTACTO-->
+</html>

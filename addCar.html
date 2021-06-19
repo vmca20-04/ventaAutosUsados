@@ -40,17 +40,40 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="addCar.html" class="nav-link"> REGISTRAR VEHICULO </a>
+              <a href="addCar.html" class="nav-link">CREAR ANUNCIO GRATIS</a>
+            </li>
+            <li class="nav-item">
+              <a href="myAdvCarList.html" class="nav-link">
+                MIS ANUNCIOS PUBLICADOS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="myFavCarList.html" class="nav-link"> MIS FAVORITOS </a>
             </li>
           </ul>
         </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#fm-modal"
+              class="nav-link"
+            >
+              REGISTRO
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="addCar.html" class="nav-link"> LOGIN </a>
+          </li>
+        </ul>
       </nav>
       <div class="frm-car-register">
         <form>
           <div class="frm-title frm-title-car-register">
             <div class="col-6">
-              <i class="fa fa-car pull-right"></i>
-              CREAR ANUNCIO GRATIS
+              <i class="fa fa-car"></i>
+              REGISTRAR VEHICULO
             </div>
           </div>
           <div class="form-border">
@@ -184,10 +207,68 @@
             </div>
           </div>
         </form>
+        <form id="frm-upload-images-car">
+          <div class="frm-title">
+            <div class="col-6">
+              <i class="fa fa-camera"></i>
+              IMAGENES DEL VEHICULO
+            </div>
+          </div>
+          <div class="form-border">
+            <div class="form-group row">
+              <div class="col-4">
+                <label class="control-label"> Imagen 1 </label>
+              </div>
+              <div class="col-5">
+                <input type="file" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-4">
+                <label class="control-label"> Imagen 2 </label>
+              </div>
+              <div class="col-5">
+                <input type="file" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-4">
+                <label class="control-label"> Imagen 3 </label>
+              </div>
+              <div class="col-5">
+                <input type="file" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-4">
+                <label class="control-label"> Imagen 4 </label>
+              </div>
+              <div class="col-5">
+                <input type="file" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-4">
+                <label class="control-label"> Imagen 5 </label>
+              </div>
+              <div class="col-5">
+                <input type="file" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-4">
+                <label class="control-label"> Imagen 6 </label>
+              </div>
+              <div class="col-5">
+                <input type="file" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </form>
         <form id="frm-extras">
           <div class="frm-title">
             <div class="col-6">
-              <i class="fa fa-wrench pull-right"></i>
+              <i class="fa fa-wrench"></i>
               EQUIPAMIENTO EXTRA DEL VEHICULO
             </div>
           </div>
@@ -637,6 +718,7 @@
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/tools.js"></script>
+    <script src="https://use.fontawesome.com/b04cdf0891.js"></script>
   </body>
   <a
     id="back-to-top"

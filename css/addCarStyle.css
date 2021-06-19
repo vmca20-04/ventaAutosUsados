@@ -37,7 +37,7 @@
      font-family: Arial;
      font-size: 1.4em;
  }
- .frm-title .fa-car{
+ .frm-title .fa-car,.frm-title .fa-camera,.frm-title .fa-wrench{
      padding-right: 10px;
      font-size: 30px;
  }
@@ -52,3 +52,7 @@
      margin-bottom: 5px;
      width: 280px;
  }
+ #frm-upload-images-car .col-4{
+    margin-left: 10px;
+    max-width:10%;
+}
