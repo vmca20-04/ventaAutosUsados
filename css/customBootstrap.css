@@ -21,6 +21,7 @@
 	 }
 	 .modal-header{
 		background-image:url(/images/background-image-title.png);
+		color:white;
 	}
      .modal-body {
         padding-top: 1.5rem;
