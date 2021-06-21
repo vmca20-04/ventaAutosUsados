@@ -63,6 +63,9 @@
         .modal-change-status.modal-content {
             height: 490px;
         }
+        .lb_status{
+          font-weight: bold;
+        }
     </style>
   </head>
   <body>
@@ -153,7 +156,7 @@
               <tr>
                 <td class="w-25">
                   <a class="car-item-link" href="detailCar.html">
-                  <img class="img-fluid img-thumbnail"  src="images/Toyota_Corolla.jpg"></img>
+                  <img class="img-fluid img-thumbnail"  src="imgItem/Toyota_Corolla.jpg"></img>
                 </a>	
                 </td>
                 <td>Hyunday</td>
@@ -218,21 +221,21 @@
         <div class="form-group-option-status row">
           <div class="optionStatus col-12">
             <input checked type="radio" id="active" name="status" value="active">
-            <label for="active">Activo</label>
+            <label class="lb_status" for="active">Activo</label>
             <label>Este anuncio sera visible para todos los usuarios.</label>
           </div>
         </div>
         <div class="form-group-option-status row">
           <div class="optionStatus col-12">
             <input type="radio" id="disabled" name="status" value="disabled ">
-            <label for="disable">Desactivado</label>
+            <label class="lb_status" for="disable">Desactivado</label>
             <label>Este anuncio solo sera visible para los vendedores en sus anuncios publicados.</label>
           </div>
         </div>
         <div class="form-group-option-status row">
           <div class="optionStatus col-12">
             <input type="radio" id="delete" name="status" value="delete">
-            <label for="delete">Eliminar</label>
+            <label class="lb_status" for="delete">Eliminar</label>
             <label>Este anuncio sera eliminado permanentemente.</label>
           </div>
         </div>

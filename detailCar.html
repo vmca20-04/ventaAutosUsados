@@ -12,6 +12,28 @@
 	<link rel="stylesheet" href="css/detailCarStyle.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<title>Venta de Autos Usados</title>
+	<style>
+        .visits-count.row{ 
+            color: #5d5e5f;
+            padding-top: 15px;
+			font-size: larger;
+			font-weight: bold;
+		}
+		.advertisiment-options{
+			margin-top: 15px;
+		}
+		.advertisiment-options label{
+			color: #5d5e5f;
+			font-size:80%;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.fa.star {
+           font-size: 54px;
+		   color: rgb(241, 134, 12);
+		   margin-top: 16px;
+          }
+	</style>
 </head>
 <body>
 	<div class="container mainForm">
@@ -55,7 +77,7 @@
         <div class="frm-car-register">
 				<div class="frm-title frm-title-car-register">
 					<div class="col-12">
-					<i class="fa fa-car pull-right"></i>
+					<i class="fa fa-car"></i>
                     <label class="car-name">
 					Hyunday Cresta 2017  
 					</label>
@@ -95,6 +117,11 @@
             </div>
 			</div>
 					<div class="col">
+						<div class="visits-count row">
+							<div class="col-8">
+								Este anuncio ha sido visto 500 veces
+							</div>
+						</div>
 					<div class="car-header-seller-info">
 					<div class="title-seller">
                         <div class="col-12">
@@ -150,7 +177,25 @@
 						</div>
 					</div>
 				</div>
-			</div>
+				<div class="advertisiment-options row">
+					<div class="col-4">
+						<div class="row justify-content-center">
+						<img class="img-fluid"  src="images/pdf-icon.png"></img>
+						<label>
+						DESCARGAR ANUNCIO
+						</label>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="row justify-content-center">
+							<span class="star fa fa-star-o"></span>
+						<label>
+						 AGREGAR A FAVORITOS
+						</label>
+						</div>
+					</div>
+					</div>
+			     </div>
 			</div>
 <!--START:DETALLES DEL VEHICULO-->
 <ul class="nav nav-pills">
@@ -471,6 +516,7 @@
 	<script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/tools.js"></script>
+	<script src="https://use.fontawesome.com/b04cdf0891.js"></script>
 </body>
 <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
 	<i class="fas fa-chevron-up"></i>
@@ -582,3 +628,10 @@
 	</div>
 </div>
 </html>
+<script>
+	$(function() {
+		$(".star.fa").click(function() {
+         $(this).toggleClass("fa-star fa-star-o");
+        });
+	});
+</script>
