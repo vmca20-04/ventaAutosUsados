@@ -1,4 +1,4 @@
-    /*MODIFICACION DE CONTROLES BOOTSTRAP*/
+    /*START:MODIFICACION DE CONTROLES BOOTSTRAP*/
 
     .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
         color: #fff;
@@ -14,11 +14,11 @@
 	 .nav {
 		 margin-left:40px;
 	 }
-	 .tab-content{
+	 /*.tab-content{
 		 margin-right: 15px;
          margin-left: 15px;
 		 margin-bottom: 10px;
-	 }
+	 }*/
 	 .modal-header{
 		background-image:url(/images/background-image-title.png);
 		color:white;
@@ -58,3 +58,4 @@
 	.page-link{
 		color:black;
 	}
+	/*END:MODIFICACION DE CONTROLES BOOTSTRAP*/

@@ -2,25 +2,12 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
-    <link rel="stylesheet" href="/resources/demos/style.css" />
-    <link rel="stylesheet" href="css/mainStyle.css" />
-    <link rel="stylesheet" href="css/addCarStyle.css" />
-    <link rel="stylesheet" href="css/customBootstrap.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/customBootstrap.css">	
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css"></link>
     <title>Venta de Autos Usados</title>
   </head>
   <body>
@@ -68,7 +55,7 @@
           </li>
         </ul>
       </nav>
-      <div class="frm-car-register">
+      <div id="add-car" class="frm-car-register">
         <form>
           <div class="frm-title frm-title-car-register">
             <div class="col-6">
@@ -714,11 +701,10 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="js/tools.js"></script>
-    <script src="https://use.fontawesome.com/b04cdf0891.js"></script>
   </body>
   <a
     id="back-to-top"
@@ -726,7 +712,7 @@
     class="btn btn-light btn-lg back-to-top"
     role="button"
   >
-    <i class="fas fa-chevron-up"></i>
+    <i class="fa fa-chevron-up"></i>
   </a>
   <div
     class="modal fade"
@@ -739,7 +725,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <i class="fas fa-envelope pull-right"> </i>
+          <i class="fa fa-envelope pull-right"> </i>
           <h5 class="modal-title" id="">Contactenos</h5>
           <button class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>

@@ -4,36 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.css">
 	<link rel="stylesheet" href="css/mainStyle.css">
-    <link rel="stylesheet" href="css/addCarStyle.css">
-	<link rel="stylesheet" href="css/customBootstrap.css">
-	<link rel="stylesheet" href="css/detailCarStyle.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/customBootstrap.css">	
+	<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css"></link>
 	<title>Venta de Autos Usados</title>
-	<style>
-        .visits-count.row{ 
-            color: #5d5e5f;
-            padding-top: 15px;
-			font-size: larger;
-			font-weight: bold;
-		}
-		.advertisiment-options{
-			margin-top: 15px;
-		}
-		.advertisiment-options label{
-			color: #5d5e5f;
-			font-size:80%;
-			font-weight: bold;
-			margin-bottom: 10px;
-		}
-		.fa.star {
-           font-size: 54px;
-		   color: rgb(241, 134, 12);
-		   margin-top: 16px;
-          }
-	</style>
 </head>
 <body>
 	<div class="container mainForm">
@@ -74,7 +49,7 @@
 				</li>
 			</ul>
 		</nav>
-        <div class="frm-car-register">
+        <div id="detail-car" class="frm-car-register">
 				<div class="frm-title frm-title-car-register">
 					<div class="col-12">
 					<i class="fa fa-car"></i>
@@ -119,7 +94,7 @@
 					<div class="col">
 						<div class="visits-count row">
 							<div class="col-8">
-								Este anuncio ha sido visto 500 veces
+								Anuncio visto 500 veces
 							</div>
 						</div>
 					<div class="car-header-seller-info">
@@ -171,7 +146,7 @@
 					<div class="row">
 						<div class="col-6">	
 							<button id="sendEmailSeller" name="sendEmailSeller" class="btn btn-send-email form-control" data-toggle="modal" data-target="#fm-modal">
-								<i class="fas fa-envelope"></i>
+								<i class="fa fa-envelope"></i>
 								Enviar correo al vendedor
 							</button>
 						</div>
@@ -512,20 +487,19 @@
         </div>
 		</div>
 	</div>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="js/tools.js"></script>
-	<script src="https://use.fontawesome.com/b04cdf0891.js"></script>
 </body>
 <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-	<i class="fas fa-chevron-up"></i>
+	<i class="fa fa-chevron-up"></i>
 </a>
 <div class="modal fade" id="fm-modal-contact" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<i class="fas fa-envelope pull-right"> </i>
+				<i class="fa fa-envelope pull-right"> </i>
 				<h5 class="modal-title" id="">Contactenos</h5>
 				<button class="close" data-dismiss="modal" aria-label="Cerrar">
 					<span aria-hidden="true">&times;</span>
@@ -578,7 +552,7 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<i class="fas fa-envelope pull-right"> </i>
+				<i class="fa fa-envelope pull-right"> </i>
 				<h5 class="modal-title" id="">Enviar correo al vendedor</h5>
 				<button class="close" data-dismiss="modal" aria-label="Cerrar">
 					<span aria-hidden="true">&times;</span>
@@ -631,6 +605,7 @@
 <script>
 	$(function() {
 		$(".star.fa").click(function() {
+
          $(this).toggleClass("fa-star fa-star-o");
         });
 	});

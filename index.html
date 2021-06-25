@@ -4,21 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.css">
 	<link rel="stylesheet" href="css/mainStyle.css">
-	<link rel="stylesheet" href="css/customBootstrap.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/customBootstrap.css">	
+	<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css"></link>
 	<title>Venta de Autos Usados</title>
-	<style>
-	 .fa.star {
-	    position: absolute;
-	    color: rgb(241, 134, 12);
-	    font-size: 240%;
-	    margin: 0;
-	    right: 20px;
-    }
-	</style>
 </head>
 <body>
 	<div class="container mainForm">
@@ -60,19 +50,15 @@
 			</ul>
 		</nav>
 		<header class="row">
-			<div class="col-md-13" style="padding-top:57px;">
+			<div class="col-12" style="padding-top:57px;">
 				<div class="carousel slide" id="secondary-carousel" data-ride="carousel">
 					<ol class="carousel-indicators">
-						<li data-target="#secondary-carousel" data-slid-to="0" class="active"></li>
-						<li data-target="#secondary-carousel" data-slid-to="1"></li>
+						<li data-target="#secondary-carousel" data-slid-to="1" class="active"></li>
 						<li data-target="#secondary-carousel" data-slid-to="2"></li>
 					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="imgCarousel/carousel1.jpg" alt="">
-						</div>
-						<div class="carousel-item">
-							<img src="imgCarousel/carousel2.jpg" alt="">
+							<img  src="imgCarousel/carousel2.jpg" alt="">
 						</div>
 						<div class="carousel-item">
 							<img src="imgCarousel/carousel3.jpg" alt="">
@@ -90,14 +76,13 @@
 			</div>
 		</header>
 		<section class="contenedor-main row">
-			<main class="col-md-12">
+			<main class="col-12">
 				<div>
-					<div class="container border" style="height:190px;">
-						<div class="row container">
+						<div class="row search-car-box border">
 							<div class="col-10">
 								<div class="row" style="padding-top:18px">
 									<div class="col-3">
-										<select class="form-control">
+										<select class="form-control short-select">
 											<option>Todas las Marcas</option>
 											<option>Chevrolet</option>
 											<option>Daihatsu</option>
@@ -116,20 +101,15 @@
 							<div class="col-2">
 								<div class="row" style="padding-top:18px;">
 									<button type="submit" id="searchWorkers" name="searchWorkers" value="Search" class="btn btn-info form-control">
-										<i class="fas fa-search"></i>
+										<i class="fa fa-search"></i>
 										BUSCAR
 									</button>
 								</div>
-								<!--<div class="row" style="padding-top:12px;">
-									<select class="form-control">
-										<option>ORDERNAR POR</option>
-									  </select>
-								</div>-->
 							</div>
 							<div class="col-10">
 								<div class="row" style="padding-top:18px;">
 									<div class="col-3">
-										<select class="form-control">
+										<select class="form-control short-select">
 											<option>Todos los Estilos</option>
 										  </select>
 									</div>
@@ -139,7 +119,7 @@
 										  </select>
 									</div>
 									<div class="col-5">
-										<select class="form-control">
+										<select id="typeFuel" class="form-control">
 											<option>Cualquier tipo de Combustible</option>
 										  </select>
 									</div>
@@ -148,7 +128,7 @@
 							<div class="col-10">
 								<div class="row" style="padding-top:15px;">
 									<div class="col-3">
-										<select class="form-control">
+										<select class="form-control short-select">
 											<option>Cualquier Provincia</option>
 										  </select>
 									</div>
@@ -170,7 +150,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
                 <div class="pagination-results row justify-content-start">
                     <div class="col-4">
@@ -199,9 +178,55 @@
 					</div>
 			</main>
 		</section>
-
-			<section class="row widgets">
-			<div class="col-12 cart-item col-md-3">
+			<section class="row widgets justify-content-center">
+			<div class="col-3 cart-item">
+				<a class="car-item-link" href="detailCar.html">
+				<div class="car-item-title">
+				<div class="col">
+					Hyunday Cresta 2016
+				</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
+						<img class="car-item-image"  src="imgItem/ticocar-1.jpg"></img>	
+					</div>
+					</div>
+				<div class="row car-item-price">
+					<div class="col">
+						Precio $500,000
+					</div>
+				</div>
+				<div class="car-item-information">
+				<div class="row">
+					<div class="col prop">Provincia</div>
+					<div class="col val">San Jose</div>
+				</div>
+				<div class="row">
+					<div class="col prop">Transmision</div>
+					<div class="col val">Automatica</div>
+				</div>
+				<div class="row">
+					<div class="col prop">Color</div>
+					<div class="col val">Gris plateado</div>
+				</div>
+				<div class="row">
+					<div class="col prop">Carroceria</div>
+					<div class="col val">Todo Terreno 4X2</div>
+				</div>
+				<div class="row">
+					<div class="col prop">Kilometraje</div>
+					<div class="col val">100 Km</div>
+				</div>
+			</div>
+		  </a>
+		  <div class="row justify-content-end">
+			<div class="col-3">	
+			 <li class="star fa fa-star-o"></li> 
+			</div>
+		   </div>
+			</div>
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -211,7 +236,7 @@
 				<div class="row">
 					<div class="col">
 						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
-						<img class="car-item-image" src="imgItem/ticocar-1.jpg"></img>	
+						<img class="car-item-image"  src="imgItem/Toyota_Corolla.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -242,60 +267,13 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">	
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
 			</div>
-			<div class="col-12 cart-item col-md-3">
-				<a class="car-item-link" href="detailCar.html">
-				<div class="car-item-title">
-				<div class="col">
-					Hyunday Cresta 2017
-				</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
-					    <img class="car-item-image" src="imgItem/Toyota_Corolla.jpg"></img>	
-					</div>
-					</div>
-				<div class="row car-item-price">
-					<div class="col">
-						Precio $500,000
-					</div>
-				</div>
-				<div class="car-item-information">
-				<div class="row">
-					<div class="col prop">Provincia</div>
-					<div class="col val">San Jose</div>
-				</div>
-				<div class="row">
-					<div class="col prop">Transmision</div>
-					<div class="col val">Automatica</div>
-				</div>
-				<div class="row">
-					<div class="col prop">Color</div>
-					<div class="col val">Gris plateado</div>
-				</div>
-				<div class="row">
-					<div class="col prop">Carroceria</div>
-					<div class="col val">Todo Terreno 4X2</div>
-				</div>
-				<div class="row">
-					<div class="col prop">Kilometraje</div>
-					<div class="col val">100 Km</div>
-				</div>
-			</div>
-		  </a>
-		  <div class="row">
-			<div class="col">	
-			 <li class="star fa fa-star-o"></li> 
-			</div>
-		   </div>
-			</div>
-			<div class="col-12 cart-item col-md-3">
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -305,7 +283,7 @@
 				<div class="row">
 					<div class="col">
 						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
-						<img class="car-item-image" src="imgItem/ticocar-1.jpg"></img>	
+						<img class="car-item-image"  src="imgItem/ticocar-1.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -336,13 +314,13 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">	
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
 			</div>
-			 <div class="col-12 cart-item col-md-3">
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -352,7 +330,7 @@
 				<div class="row">
 					<div class="col">
 						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
-						<img class="car-item-image" src="imgItem/ticocar-1.jpg"></img>	
+						<img class="car-item-image"  src="imgItem/Toyota_Corolla.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -383,13 +361,13 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">	
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
 			</div>
-			<div class="col-12 cart-item col-md-3">
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -398,8 +376,8 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
-					    <img class="car-item-image" src="imgItem/Toyota_Corolla.jpg"></img>	
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
+						<img class="car-item-image"  src="imgItem/ticocar-1.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -430,13 +408,13 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">	
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
 			</div>
-			<div class="col-12 cart-item col-md-3">
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -445,8 +423,8 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
-					    <img class="car-item-image" src="imgItem/Toyota_Corolla.jpg"></img>	
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
+						<img class="car-item-image"  src="imgItem/Toyota_Corolla.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -477,13 +455,13 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">	
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
 			</div>
-			<div class="col-12 cart-item col-md-3">
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -492,8 +470,8 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
-					    <img class="car-item-image" src="imgItem/Toyota_Corolla.jpg"></img>	
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
+						<img class="car-item-image"  src="imgItem/ticocar-1.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -524,13 +502,13 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">	
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
 			</div>
-			<div class="col-12 cart-item col-md-3">
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -539,8 +517,8 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
-					    <img class="car-item-image" src="imgItem/Toyota_Corolla.jpg"></img>	
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
+						<img class="car-item-image"  src="imgItem/Toyota_Corolla.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -571,13 +549,60 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">	
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
 			</div>
-			<div class="col-12 cart-item col-md-3">
+			<div class="col-3 cart-item">
+				<a class="car-item-link" href="detailCar.html">
+				<div class="car-item-title">
+				<div class="col">
+					Hyunday Cresta 2018
+				</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
+						<img class="car-item-image"  src="imgItem/ticocar-1.jpg"></img>	
+					</div>
+					</div>
+				<div class="row car-item-price">
+					<div class="col">
+						Precio $500,000
+					</div>
+				</div>
+				<div class="car-item-information">
+				<div class="row">
+					<div class="col prop">Provincia</div>
+					<div class="col val">San Jose</div>
+				</div>
+				<div class="row">
+					<div class="col prop">Transmision</div>
+					<div class="col val">Automatica</div>
+				</div>
+				<div class="row">
+					<div class="col prop">Color</div>
+					<div class="col val">Gris plateado</div>
+				</div>
+				<div class="row">
+					<div class="col prop">Carroceria</div>
+					<div class="col val">Todo Terreno 4X2</div>
+				</div>
+				<div class="row">
+					<div class="col prop">Kilometraje</div>
+					<div class="col val">100 Km</div>
+				</div>
+			</div>
+		  </a>
+		  <div class="row justify-content-end">
+			<div class="col-3">	
+			 <li class="star fa fa-star-o"></li> 
+			</div>
+		   </div>
+			</div>
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -586,8 +611,8 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
-					    <img class="car-item-image" src="imgItem/Toyota_Corolla.jpg"></img>	
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
+						<img class="car-item-image"  src="imgItem/Toyota_Corolla.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -618,13 +643,13 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">	
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
 			</div>
-			<div class="col-12 cart-item col-md-3">
+			<div class="col-3 cart-item">
 				<a class="car-item-link" href="detailCar.html">
 				<div class="car-item-title">
 				<div class="col">
@@ -633,8 +658,8 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
-					    <img class="car-item-image" src="imgItem/Toyota_Corolla.jpg"></img>	
+						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;6</p>
+						<img class="car-item-image"  src="imgItem/ticocar-1.jpg"></img>	
 					</div>
 					</div>
 				<div class="row car-item-price">
@@ -665,55 +690,8 @@
 				</div>
 			</div>
 		  </a>
-		  <div class="row">
-			<div class="col">	
-			 <li class="star fa fa-star-o"></li> 
-			</div>
-		   </div>
-			</div>
-			<div class="col-12 cart-item col-md-3">
-				<a class="car-item-link" href="detailCar.html">
-				<div class="car-item-title">
-				<div class="col">
-					Hyunday Cresta 2017
-				</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<p class="camera-number"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;3</p>
-					    <img class="car-item-image" src="imgItem/Toyota_Corolla.jpg"></img>	
-					</div>
-					</div>
-				<div class="row car-item-price">
-					<div class="col">
-						Precio $500,000
-					</div>
-				</div>
-				<div class="car-item-information">
-				<div class="row">
-					<div class="col prop">Provincia</div>
-					<div class="col val">San Jose</div>
-				</div>
-				<div class="row">
-					<div class="col prop">Transmision</div>
-					<div class="col val">Automatica</div>
-				</div>
-				<div class="row">
-					<div class="col prop">Color</div>
-					<div class="col val">Gris plateado</div>
-				</div>
-				<div class="row">
-					<div class="col prop">Carroceria</div>
-					<div class="col val">Todo Terreno 4X2</div>
-				</div>
-				<div class="row">
-					<div class="col prop">Kilometraje</div>
-					<div class="col val">100 Km</div>
-				</div>
-			</div>
-		  </a>
-		  <div class="row">
-			<div class="col">	
+		  <div class="row justify-content-end">
+			<div class="col-3">
 			 <li class="star fa fa-star-o"></li> 
 			</div>
 		   </div>
@@ -725,20 +703,19 @@
 			</div>
 		</footer>
 	</div>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="js/tools.js"></script>
-	<script src="https://use.fontawesome.com/b04cdf0891.js"></script>
 </body>
 <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
-	<i class="fas fa-chevron-up"></i>
+	<i class="fa fa-chevron-up"></i>
 </a>
 <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<i class="fas fa-envelope pull-right"> </i>
+				<i class="fa fa-envelope pull-right"> </i>
 				<h5 class="modal-title" id="">Contactenos</h5>
 				<button class="close" data-dismiss="modal" aria-label="Cerrar">
 					<span aria-hidden="true">&times;</span>
@@ -802,8 +779,10 @@
 	  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 		" - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
-		$(".star.fa").click(function() {
-            $(this).toggleClass("fa-star fa-star-o");
+		$(".star.fa").click(function()  {
+
+		   $(this).toggleClass("fa-star fa-star-o");
         });
-	});
+
+	   });
 	</script>

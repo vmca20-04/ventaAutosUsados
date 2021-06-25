@@ -2,71 +2,13 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
-    <link rel="stylesheet" href="/resources/demos/style.css" />
-    <link rel="stylesheet" href="css/mainStyle.css" />
-    <link rel="stylesheet" href="css/addCarStyle.css" />
-    <link rel="stylesheet" href="css/customBootstrap.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/customBootstrap.css">	
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css"></link>
     <title>Venta de Autos Usados</title>
-    <style>
-      .table-car-detail{
-         border: 1px solid #bbb9b9;
-      }
-      .table-car-detail td, th {
-          vertical-align: middle;
-          color:black;
-          text-align: center;
-       }
-      .frm-title .fa-file-text-o{
-          padding-right: 10px;
-          font-size: 30px;
-      }
-      .form-border-favorite-list {
-          border: 1px solid #bbb9b9;
-          padding-top: 50px;
-          padding-bottom: 10px;
-          padding-right: 10px;
-          padding-left: 10px;
-          max-width: 100%;
-          height: auto;
-      }
-      .table .thead-dark th {
-          background-color: #3a3d40;
-      }
-      #fm-modal-change-status{
-          top: 30px;
-          color:#3a3d40;
-       }
-       .optionStatus{
-          border: 1px solid #bbb9b9;
-          border-radius: 0px 0px 0px 10px 15px;
-          margin-bottom: 10px;
-          padding-top:15px;
-          padding-bottom:15px;
-       }
-       .form-group-option-status {
-           margin-bottom: -1rem;
-        }
-        .form-group-option-buttons {
-           margin-bottom: -1rem;
-           margin-top: 45px;
-        }
-        .modal-change-status.modal-content {
-            height: 490px;
-        }
-        .lb_status{
-          font-weight: bold;
-        }
-    </style>
   </head>
   <body>
     <div class="container mainForm">
@@ -132,7 +74,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="table-active">
                 <td class="w-25">
                   <a class="car-item-link" href="detailCar.html">
                   <img class="img-fluid img-thumbnail"  src="imgItem/ticocar-1.jpg"></img>
@@ -153,7 +95,7 @@
                 </td>
                 <td></td>
               </tr>
-              <tr>
+              <tr class="table-light">
                 <td class="w-25">
                   <a class="car-item-link" href="detailCar.html">
                   <img class="img-fluid img-thumbnail"  src="imgItem/Toyota_Corolla.jpg"></img>
@@ -185,11 +127,10 @@
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="js/tools.js"></script>
-    <script src="https://use.fontawesome.com/b04cdf0891.js"></script>
   </body>
   <a
     id="back-to-top"
@@ -197,7 +138,7 @@
     class="btn btn-light btn-lg back-to-top"
     role="button"
   >
-    <i class="fas fa-chevron-up"></i>
+    <i class="fa fa-chevron-up"></i>
   </a>
 
   <!--START:MODAL PARA REMOVER EL ANUNCIO DE FAVORITOS-->
@@ -276,7 +217,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <i class="fas fa-envelope pull-right"> </i>
+          <i class="fa fa-envelope pull-right"> </i>
           <h5 class="modal-title" id="">Contactenos</h5>
           <button class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
